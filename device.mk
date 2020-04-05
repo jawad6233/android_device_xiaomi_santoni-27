@@ -395,7 +395,8 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc \
     init.spectrum.rc \
-    init.spectrum.sh
+    init.spectrum.sh \
+    init.safailnet.rc
 
 PRODUCT_PACKAGES += \
     init.baseband.sh \
