@@ -152,7 +152,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AntHalService \
     com.dsi.ant.antradio_library
-	
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     libldacBT_dec
@@ -272,7 +272,8 @@ PRODUCT_PACKAGES += \
 
 # HW crypto
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
+    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee \
+    vendor.qti.hardware.cryptfshw@1.0
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -307,6 +308,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
     android.hardware.keymaster@3.0-service
+
+# Libshims
+PRODUCT_PACKAGES += \
+    libshims_camera
 
 # Lights
 PRODUCT_PACKAGES += \
