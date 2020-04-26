@@ -21,11 +21,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 $(call inherit-product, vendor/xiaomi/santoni/santoni-vendor.mk)
 
-#HAls
-PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/display
-PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/audio
-PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/media
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-pa
@@ -435,9 +430,6 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
-
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
@@ -528,7 +520,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
    WfdCommon
-
-PRODUCT_BOOT_JARS += \
-   QPerformance \
-   UxPerformance
